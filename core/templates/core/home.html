@@ -1,0 +1,47 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block maincontent %}
+<div class="mt-5">
+<div class="text-center">
+    <img src="{% static "core/images/nir2.jpg" %}" alt="profile pic"
+    class="img-thumbnail"width='250px' height='150px'>
+</div>
+<div class="mt-5 text-white mx-5 text-justify">
+    <h1 class="font-weight-bold st-font ">Hello,</h1>
+    <div class="px-4 par-font" style="line-height: 2rem">
+    <p style="text-indent: 100px">
+        My Name is <b class="text-warning st-font">Nirmal</b>
+        I'm a passionate Computer Science student with a strong 
+        focus on software development, especially Python backend 
+        development, data science, and machine learning. 
+        I love solving problems and creating solutions through code.
+    </p>
+    <p>
+        I've worked on various projects, both in my studies and on my own, 
+        where I've sharpened my skills in Python, Django, and FastAPI.
+        I've also dived into data science and machine learning.
+        I'm good at building strong, scalable backend systems and have a 
+        solid grasp of managing databases, especially with 
+        PostgreSQL.
+        <b class="text-warning">
+            I’m always eager to learn new technologies and apply them to 
+            real-world situations. Whether it's building a full-stack app, 
+            analyzing data for insights, or creating machine learning models, I aim to 
+            deliver high-quality, efficient solutions.
+    </p>
+    <p>
+        <b class="text-warning">
+            I enjoy working in teams where I can contribute to exciting 
+            projects and grow with other skilled professionals. My goal is to 
+            find a role in the IT industry where I can use my skills, keep learning, 
+            and make a positive impact.</b
+        >
+    </p>
+    </div>
+</div>
+<div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 m-5">Hire me</a>
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+</div>
+</div>
+{% endblock maincontent %}

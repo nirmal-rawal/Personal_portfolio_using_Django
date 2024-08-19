@@ -1,0 +1,52 @@
+{% extends "core/base.html" %}
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-warning mb-5 border-bottom">Get in touch with me</h1>
+    <div class="row text-white mb-5">
+        <p class="mx-auto mb-5 text-center " style="font-weight: bold; font-size:large;">
+            Do you have any questions? Please do not hesitate to contact. I will come back to 
+            you within a matter of hours to help you.
+        </p>
+        <div class="col-sm-9 mb-5">
+            <form action="https://formspree.io/f/xrbzagja" method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputName">Your Name</label>
+                        <input type="text" class="form-control " id="inputName" name="name" placeholder="Your Name" />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="InputEmail">Your Email*</label>
+                        <input type="email" class="form-control  " id="InputEmail" name="email" placeholder="Your Email *" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="InputSubject">Subject</label>
+                    <input type="text" class="form-control " id="InputSubject" name="subject" placeholder="Subject" />
+                </div>
+                <div class="mb-3">
+                    <label for="inputtextarea">Message*</label>
+                    <textarea class="form-control " id="inputtextarea" name="message" rows="5" placeholder="Message *" required></textarea>
+                </div>
+                <button class="btn btn-warning btn-block" type="submit">Send</button>
+            </form>
+        </div>
+        <div class="col-sm-3 text-center text-white">
+            <ul class="list-unstyled">
+                <li>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.291896107986!2d85.29670378119604!3d27.677371814832377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19746f442803%3A0x1fde239459633f6d!2sMAW%20Earthmovers%20Pvt.%20Ltd.%20(JCB)!5e0!3m2!1sen!2snp!4v1724050602752!5m2!1sen!2snp" width="200" height="200" style="border:0;" allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p> <i class="fa-solid fa-location-dot fa-2x text-info"></i> Kathmandu, Nepal</p>
+
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone fa-2x text-info"></i>
+                    <p>9842676363</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope fa-2x text-info"></i>
+                    <p>nirmalrawal378@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock content %}

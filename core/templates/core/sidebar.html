@@ -1,0 +1,61 @@
+{% load static %}
+<style>
+    .sidebar-container {
+        border-right: 3px solid blue; /* Set border color and width */
+        height: 100%; /* Ensure the border extends the full height of the container */
+        padding: 20px; /* Add padding for spacing */
+        
+    }
+
+    .profile-container {
+        text-align: center;
+        margin-bottom: 20px; /* Space below the profile section */
+    }
+
+    .profile-picture {
+        border-radius: 50%; /* Makes the image round */
+        width: 100px; /* Adjust as needed */
+        height: 100px; /* Adjust as needed */
+        object-fit: cover; /* Ensures the image covers the dimensions without distortion */
+    }
+
+    .profile-name {
+        margin-top: 10px; /* Space between picture and name */
+        color: #fff; /* Text color */
+        font-family: "Barlow Condensed"; /* Match font family */
+        font-weight: bold;
+    }
+
+    .nav-link {
+        color: #fff; /* Default link color */
+        transition: color 0.3s, background-color 0.3s; /* Smooth transition */
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .nav-link:hover {
+        color: #000; /* Color when hovered */
+        background-color: #e9cd7e; /* Background color when hovered */
+    }
+
+    .nav-link:hover.active {
+        color: black; /* Color when hovered */
+        background-color: #ffc107; /* Background color when hovered */
+        font-weight: bold;
+    }
+</style>
+
+<div class="profile-container">
+    <img src="{% static 'core/images/nir1.jpg' %}" alt="Profile pic" class="profile-picture">
+    <h3 class="profile-name st-font">Nirmal Rawal</h3>
+</div>
+
+<hr class="border-light">
+
+<nav class="nav flex-column text-center st-font">
+    <a href="{% url 'home' %}" class="nav-link {{home}}">Home</a>
+    <a href="{% url 'services' %}" class="nav-link {{services}}">Services</a>
+    <a href="{% url 'skill' %}" class="nav-link {{skill}}">Skills</a>
+    <a href="{% url 'contact' %}" class="nav-link {{contact}}">Contact me</a>
+</nav>
